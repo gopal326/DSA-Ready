@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.dsaready.ui.view.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_topicFragment"
+            app:destination="@id/topicFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/topicFragment"
+        android:name="com.example.dsaready.ui.view.TopicFragment"
+        android:label="fragment_topic"
+        tools:layout="@layout/fragment_topic" >
+        <action
+            android:id="@+id/action_topicFragment_to_theoryFragment"
+            app:destination="@id/theoryFragment" />
+        <action
+            android:id="@+id/action_topicFragment_to_problemFragment"
+            app:destination="@id/problemFragment" />
+        <argument
+            android:name="currentTopic"
+            app:argType="com.example.dsaready.model.Topic" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/theoryFragment"
+        android:name="com.example.dsaready.ui.view.TheoryFragment"
+        android:label="fragment_theory"
+        tools:layout="@layout/fragment_theory" >
+        <argument
+            android:name="currentTopic"
+            app:argType="com.example.dsaready.model.Topic" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/problemFragment"
+        android:name="com.example.dsaready.ui.view.ProblemFragment"
+        android:label="fragment_problem"
+        tools:layout="@layout/fragment_problem" >
+        <action
+            android:id="@+id/action_problemFragment_to_problemDetailsFragment"
+            app:destination="@id/problemDetailsFragment" />
+        <argument
+            android:name="currentTopic"
+            app:argType="com.example.dsaready.model.Topic" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/problemDetailsFragment"
+        android:name="com.example.dsaready.ui.view.ProblemDetailsFragment"
+        android:label="fragment_problem_details"
+        tools:layout="@layout/fragment_problem_details" >
+        <argument
+            android:name="currentProblem"
+            app:argType="com.example.dsaready.model.Problem" />
+    </fragment>
+
+
+</navigation>

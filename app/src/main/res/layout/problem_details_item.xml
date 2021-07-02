@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewHeading"
+            android:layout_width="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/sailec_medium"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:id="@+id/textViewTheory"
+            android:layout_width="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/sailec_regular"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text" />
+
+        <io.github.kbiakov.codeview.CodeView
+            android:id="@+id/code_view_theory"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingClass" />
+
+    </LinearLayout>
+
+
+
+</layout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <group-->
+<!--        android:id="@+id/homegroup"-->
+<!--        android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:icon="@drawable/ic_launcher_foreground"-->
+<!--            android:title="Main screen"/>-->
+<!--        <item-->
+<!--            android:id="@+id/nav_branches"-->
+<!--            android:icon="@drawable/ic_launcher_background"-->
+<!--            android:title="Branch selection" />-->
+
+<!--    </group>-->
+
+
+    <item
+        android:id="@+id/shareApp"
+        android:icon="@drawable/icon_happy"
+        android:title="Share the App"/>
+
+
+    <item
+        android:id="@+id/aboutApp"
+        android:icon="@drawable/icon_about"
+        android:title="About"/>
+
+    <item
+        android:id="@+id/rateApp"
+        android:icon="@drawable/icon_rate"
+        android:title="Rate"/>
+
+</menu>

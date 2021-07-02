@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DSA Ready</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="about">About</string>
+
+    <string name="aboutApp">DSA Ready, a sample Android app written in Kotlin that can contain Data Structures and Algorithms topics and problems with text, code(with syntax) and tags.\n
+        \nIf you liked this app, give it a &#11088; and share it to your friends &#129321; \n \nThanks for your time
+        </string>
+
+</resources>
