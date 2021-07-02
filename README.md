@@ -3,7 +3,7 @@
 ![mockup_2](https://github.com/gopal326/DSA-Ready/blob/master/Screenshot/mockup_2.png)
 
 # DSA-Ready
-**DSA Ready**, a sample Android app written in Kotlin that can contain Topics &amp; Problems with text, code(with syntax) &amp; tags. The purpose of this app was to learn the important development practices, techniques and tools.
+**DSA Ready**, an Android app written in Kotlin that can contain Topics &amp; Problems with text, code(with syntax) &amp; tags. The purpose of this app was to learn the important development practices, techniques and tools.
 
 ***You can Install the app from below 👇***
 
